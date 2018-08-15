@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>搶孤遊戲</title>
+    <link href="./src/race-game-min.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>搶孤遊戲</h1>
+    <div id="game-wrapper">
+        <div class="game-wrap">
+            <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+            <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+            <animateTransform attributeType="xml"
+                              attributeName="transform"
+                              type="rotate"
+                              from="0 25 25"
+                              to="360 25 25"
+                              dur="0.6s"
+                              repeatCount="indefinite" />
+            </path>
+        </svg>
+            <canvas id="bg"></canvas>
+            <canvas id="game"></canvas>
+            <img alt="" id="image1" style="display: none" src="./img/image1.png" />
+            <img alt="" id="image2" style="display: none" src="./img/image2.png" />
+            <img alt="" id="image3" style="display: none" src="./img/image3.png" />
+            <img alt="" id="image4" style="display: none" src="./img/image4.png" />
+            <img alt="" id="image5" style="display: none" src="./img/image5.png" />
+            <img alt="" id="image6" style="display: none" src="./img/image6.png" />
+            <img alt="" id="image7" style="display: none" src="./img/image7.png" />
+            <img alt="" id="image8" style="display: none" src="./img/image8.png" />
+            <img alt="" id="image9" style="display: none" src="./img/image9.png" />
+            <img alt="" id="image10" style="display: none" src="./img/image10.png" />
+            <img alt="" id="image11" style="display: none" src="./img/image11.png" />
+            <img alt="" id="image12" style="display: none" src="./img/image12.png" />
+            <img alt="" id="image13" style="display: none" src="./img/image13.png" />
+            <img alt="" id="image14" style="display: none" src="./img/image14.png" />
+            <button id="game-btn" onclick="gameStart(event)">開始遊戲</button>
+            <button id="go-btn" onclick="gameGo(event)">爬</button>
+            <canvas id="reward"></canvas>
+            <div id="finish-text">
+                <h1>勝利！！</h1>
+            </div>
+            <div id="finish-wrap">
+                <button id="play-agin" onclick="game.playAgain()" class="reward-btn"><i class="fas fa-redo"></i>再玩一次</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./dist/drawObjects.js"></script>
+    <script src="./dist/raceGame.js"></script>
+</body>
+</html>
